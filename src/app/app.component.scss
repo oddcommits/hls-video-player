@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  height: 95vh;
+  margin: 2em 2em 0 2em;
+
+  h1 {
+    margin: 0;
+  }
+
+  .video-app {
+    margin-top: 1em;
+    display: flex;
+    width: 95vw;
+    height: 95vh;
+    justify-content: center;
+    align-items: flex-start;
+
+    .video-player {
+      width: 60vw;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (max-width: 768) {
+      flex-direction: column;
+
+      .video-player {
+        width: 90%;
+      }
+    }
+  }
+}
